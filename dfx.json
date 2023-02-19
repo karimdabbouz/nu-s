@@ -1,0 +1,37 @@
+{
+  "canisters": {
+    "balancr_dapp_dao": {
+      "main": "src/balancr_dapp_backend/dao.mo",
+      "type": "motoko"
+    },
+    "balancr_dapp_content": {
+      "main": "src/balancr_dapp_backend/content.mo",
+      "type": "motoko"
+    },
+    "balancr_dapp_icrc1": {
+      "main": "src/balancr_dapp_backend/icrc1.mo",
+      "type": "motoko"
+    },
+    "balancr_dapp_frontend": {
+      "dependencies": [
+        "balancr_dapp_dao",
+        "balancr_dapp_content"
+      ],
+      "frontend": {
+        "entrypoint": "src/balancr_dapp_frontend/src/index.html"
+      },
+      "source": [
+        "src/balancr_dapp_frontend/assets",
+        "dist/balancr_dapp_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}

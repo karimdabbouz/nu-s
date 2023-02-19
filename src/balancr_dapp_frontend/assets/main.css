@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400&family=Roboto+Slab:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,400;0,800;1,400&display=swap');
+
+* {
+    font-family: 'Raleway';
+    color: black;
+}
+
+h1 {
+    font-family: 'IBM Plex Mono';
+}
+
+h2 {
+    font-family: 'IBM Plex Mono';
+}
+
+h3 {
+    font-family: 'IBM Plex Mono';
+}
+
+h4 {
+    font-family: 'IBM Plex Mono';
+}
+
+h5 {
+    font-family: 'IBM Plex Mono';
+}
+
+a:link {
+    color: salmon;
+    font-weight: bold;
+}
+
+a:visited {
+    color: salmon;
+}
+
+a:hover {
+    color: black;
+}
+
+
+.navbar-brand h1 {
+    font-weight: bold;
+}
+
+.navbar-brand a:link {
+    text-decoration: none;
+    color: #212529 !important;
+}
+
+.navbar-brand a:visited {
+    text-decoration: none;
+    color: #212529 !important;
+}
+
+.navbar-brand a:hover {
+    text-decoration: none;
+    color: salmon !important;
+}
+
+.navbar-nav span {
+    color: salmon !important;
+    font-weight: bold !important;
+}
+
+.above-the-fold {
+    padding-top: 120px;
+    min-height: 100vh;
+}
+
+.progress-bar-one-third {
+    background-color: rgb(255, 206, 201) !important;
+}
+
+.progress-bar-current {
+    background-color: salmon !important;
+}
+
+
+.pulsate {
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsate {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 20px rgba(255, 255, 0, 0);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(255, 255, 0, 0);
+	}
+}
+
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid #fa8072;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+  
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    4.9% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    5% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .maxwidth50 {
+        width: 50%;
+    }
+
+}
+  
